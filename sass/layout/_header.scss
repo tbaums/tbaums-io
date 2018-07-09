@@ -3,8 +3,8 @@
 
   background: linear-gradient(
     to right bottom,
-    $color-secondary-light,
-    $color-secondary
+    $color-secondary,
+    $color-secondary-dark
   );
 
   display: grid;
@@ -33,7 +33,7 @@
     &:hover,
     &:active {
       // fill: $color-primary;
-      background: $color-primary;
+      background: $color-tertiary;
       height: 4.5rem;
       width: 4.5rem;
       transform: translateY(10%);

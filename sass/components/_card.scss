@@ -6,7 +6,7 @@
     height: 52rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     border-radius: 5px;
-    overflow: hidden;
+    // overflow: hidden;
   
     &__side {
       height: 52rem;
@@ -29,8 +29,8 @@
         &-1 {
           background-image: linear-gradient(
             to right bottom,
-            $color-secondary-light,
-            $color-secondary-dark
+            $color-quarternary-light,
+            $color-quarternary-dark
           );
         }
   
@@ -71,8 +71,8 @@
       &--1 {
         background-image: linear-gradient(
             to right bottom,
-            $color-secondary-light,
-            $color-secondary-dark
+            $color-quarternary-light,
+            $color-quarternary-dark
           ),
           url(../img/nat-5.jpg); // this must be in relation to the final, compiled CSS file
       }
@@ -105,7 +105,7 @@
       position: absolute;
       top: 12rem;
       right: 2rem;
-      width: 60%;
+      width: 65%;
     }
   
     &__heading-span {
@@ -116,8 +116,8 @@
       &--1 {
         background-image: linear-gradient(
           to right bottom,
-          rgba($color-secondary-light, 0.85),
-          rgba($color-secondary-dark, 0.85)
+          rgba($color-quarternary-light, 0.85),
+          rgba($color-quarternary-dark, 0.85)
         );
       }
   

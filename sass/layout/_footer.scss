@@ -1,4 +1,30 @@
 .footer {
     grid-column: full-start / full-end;
-    background: $color-secondary;
+    background: $color-grey-dark-1;
+    color: $color-tertiary;
+    font-size: 2.5rem;
+    padding: 5rem 5rem;
+    // height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+
+   
+    &__legal {
+        display: inline-block;
+    }
+
+    &__social {
+        display: inline-block;
+    }
+
+    &__icon {
+        fill: currentColor;
+        height: 2.5rem;
+        width: 2.5rem;
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
 }

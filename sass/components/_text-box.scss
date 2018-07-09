@@ -1,0 +1,79 @@
+.text-box {
+  width: 40rem;
+  height: 30rem;
+  margin: auto;
+  // height: minmax(20rem, 35%);
+
+  display: grid;
+  grid-template-rows: 60% 40%;
+
+  width: minmax(20rem, 15%);
+  transition: all 0.4s;
+  text-align: center;
+
+  &:hover {
+    border-radius: 25rem;
+  }
+
+  &--resume {
+    color: $color-quarternary-dark;
+    border: 6px solid $color-quarternary;
+  }
+
+  &--contact {
+    color: $color-tertiary-dark;
+    border: 6px solid $color-tertiary;
+  }
+
+  &__headline {
+    font-size: 3rem;
+    margin: auto;
+    grid-row: 1 / span 1;
+  }
+
+  &__cta:link,
+  &__cta:visited {
+    width: 50%;
+    border: .2rem solid currentColor;
+    // border-radius: 3rem;
+    margin: auto;
+    text-decoration: none;
+    font-size: 250%;
+    color: inherit;
+    transition: all 0.4s;
+    
+
+    &:hover {
+      box-shadow: $shadow-dark-1--wide;
+      transform: translate(0, -1rem);
+    }
+
+    &:active {
+      transform: translate(0, -0.5rem);
+      box-shadow: $shadow-dark-1;
+    }
+  }
+
+  &__icon-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 0 20%;
+  }
+
+  &__icon {
+      display: inline-block;
+      height: 5rem;
+      width: 5rem;
+      margin: auto;
+      fill: currentColor;
+      transition: all .4s;
+      backface-visibility: hidden;
+
+      &:hover {
+          transform: translateY(-25%);
+      }
+
+
+  }
+}

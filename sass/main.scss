@@ -3,10 +3,14 @@
 @import "base/variables";
 @import "base/base";
 
-@import "components/feature";
+@import "components/button";
 @import "components/card";
+@import "components/feature";
+@import "components/text-box";
+
 
 @import "layout/footer";
 @import "layout/header";
+@import "layout/info";
 @import "layout/intro";
 @import "layout/projects";

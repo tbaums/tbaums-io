@@ -14,6 +14,8 @@
 </head>
 
 <body class="container">
+    <!-- TODO - make responsive -->
+    <!-- TODO - add links to everything -->
     <!-- TODO - add checkbox hack menu -->
     <!-- TODO - add floating full name to top right -->
     <header class="header">
@@ -21,7 +23,8 @@
         <!-- TODO include an autoplay coding video here beneath the gradient overlay -->
         <h1 class="header__text">
             Hi!
-            <br /> I'm Michael Tanenbaum, <br/> a software engineer based in NYC.
+            <br /> I'm Michael Tanenbaum,
+            <br/> a software engineer based in NYC.
         </h1>
         <!-- TODO - add an anchor tag to the intro section so that it scrolls when clicked -->
         <svg class="header__icon">
@@ -32,27 +35,25 @@
     <section class="intro">
         <div class="feature">
             <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-global"></use>
+                <use xlink:href="img/sprite.svg#icon-clipboard"></use>
             </svg>
             <h4 class="feature__title">
                 Committed to quality code
             </h4>
             <p class="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
-                autem quae iste aliquid velit nisi beatae similique vitae.
+                I believe that adherence to best practices today accelerates delivery in future. My experience has taught me that investing in strong operational infrastructure pays mega dividends as complexity increases.
             </p>
         </div>
 
         <div class="feature">
             <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-presentation"></use>
+                <use xlink:href="img/sprite.svg#icon-stats-dots"></use>
             </svg>
             <h4 class="feature__title">
                 Business-focused engineer
             </h4>
             <p class="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
-                autem quae iste aliquid velit nisi beatae similique vitae.
+                I've worked both as a software engineer and a business person. I believe that engineers can only make wise decisions when we fully understand the dynamics of the business in which we operate.
             </p>
         </div>
 
@@ -64,21 +65,19 @@
                 Enthusiastic team player
             </h4>
             <p class="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
-                autem quae iste aliquid velit nisi beatae similique vitae.
+                My favorite aspect of working as a software engineer is the team dynamic. I believe that a collection of dedicated folks working towards a goal without ego is one of life's great pleasures.
             </p>
         </div>
 
         <div class="feature">
             <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-global"></use>
+                <use xlink:href="img/sprite.svg#icon-quill"></use>
             </svg>
             <h4 class="feature__title">
                 Technique before technology
             </h4>
             <p class="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
-                autem quae iste aliquid velit nisi beatae similique vitae.
+                As an engineer, I enjoy working with tools both old and new. While I appreciate the (usually) very real benefits of cutting-edge technology, I'm partial to whatever tool fits the job best.
             </p>
         </div>
     </section>
@@ -86,14 +85,158 @@
     <div class="projects__left-gutter"></div>
     <section class="projects">
         <h2 class="projects__title">
-            Example Projects 
+            Example Projects
         </h2>
-        <div class="project">Minesweeper (React)</div>
-        <div class="project">Nature tours landing page (float-based layout)</div>
-        <div class="project">Travel booking webapp (flexbox-based layout)</div>
+        <div class="project">
+            <div class="card">
+                <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--1">
+                        &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                        <span class="card__heading-span card__heading-span--1">
+                            Minesweeper
+                        </span>
+                    </h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>Built fully in React</li>
+                            <li>Uses React.setState() (no Redux)</li>
+                            <li>Hosted on AWS S3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-1">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <!-- <p class="card__price-only">
+                                Take a look
+                            </p> -->
+                            <p class="card__price-value">
+                                Check it out
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn--white btn--animated">Click me!!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="card">
+                <!-- TODO - add screenshots of example apps -->
+                <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--2">
+                        &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                        <span class="card__heading-span card__heading-span--2">
+                            Nature tours landing page
+                        </span>
+                    </h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>Float-based layout</li>
+                            <li>CSS only animations</li>
+                            <li>Uses "checkbox hack"</li>
+                            <li>Custom radio buttons</li>
+                            <li>Fully responsive</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-2">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <!-- <p class="card__price-only">
+                                    Only
+                                </p> -->
+                            <p class="card__price-value">
+                                Check it out
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn--white btn--animated">Click me!!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="card">
+                <div class="card__side card__side--front">
+                    <div class="card__picture card__picture--3">
+                        &nbsp;
+                    </div>
+                    <h4 class="card__heading">
+                        <span class="card__heading-span card__heading-span--3">
+                            Travel booking app
+                        </span>
+                    </h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>Flexbox-based layout</li>
+                            <li>CSS only animations</li>
+                            <li>Icons via SVG sprite</li>
+                            <li>Fully responsive</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-3">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <!-- <p class="card__price-only">
+                                        Only
+                                    </p> -->
+                            <p class="card__price-value">
+                                Check it out
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn--white btn--animated">Click me!!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <div class="projects__right-gutter"></div>
-    <footer class="footer">Text goes here</footer>
+    <div class="info__left-gutter"></div>
+    <section class="info">
+        <div class="text-box text-box--resume">
+            <span class="text-box__headline"> I'm looking for new opportunities!</span>
+            <a href="#" class="text-box__cta">My Resume</a>
+        </div>
+
+        <div class="text-box text-box--contact">
+            <span class="text-box__headline">Want to get in touch?</span>
+            <div class="text-box__icon-container">
+                <svg class="text-box__icon">
+                    <a href="#"><use xlink:href="img/sprite.svg#icon-linkedin"></use></a>
+                </svg>
+                <svg class="text-box__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <svg class="text-box__icon">
+                    <use xlink:href="img/sprite.svg#icon-stackoverflow"></use>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+    <div class="info__right-gutter"></div>
+    <footer class="footer">
+        <div class="footer__legal">
+            &copy; 2018, Michael Tanenbaum
+        </div>
+        <div class="footer__social">
+
+            <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+            <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-stackoverflow"></use>
+            </svg>
+        </div>
+
+    </footer>
 </body>
 
 </html>
