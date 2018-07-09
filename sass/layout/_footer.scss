@@ -18,13 +18,16 @@
         display: inline-block;
     }
 
-    &__icon {
-        fill: currentColor;
+    &__icon{
+        fill: $color-tertiary;
         height: 2.5rem;
         width: 2.5rem;
-        
-        &:not(:last-child) {
-            margin-right: 2rem;
+        margin-right: 3rem;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-10%);
         }
     }
+
 }

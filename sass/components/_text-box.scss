@@ -35,7 +35,7 @@
   &__cta:visited {
     width: 50%;
     border: .2rem solid currentColor;
-    // border-radius: 3rem;
+    border-radius: 3px;
     margin: auto;
     text-decoration: none;
     font-size: 250%;
@@ -59,19 +59,31 @@
     margin: auto;
     display: flex;
     padding: 0 20%;
+    justify-content: space-evenly;
   }
 
   &__icon {
+      border: 2px solid $color-tertiary-dark;
+      // color: transparent;
+      border-radius: 3px;
+      padding: 5px;
       display: inline-block;
       height: 5rem;
       width: 5rem;
       margin: auto;
-      fill: currentColor;
+      fill: $color-tertiary-dark;
       transition: all .4s;
       backface-visibility: hidden;
+      
 
       &:hover {
-          transform: translateY(-25%);
+          transform: translateY(-15%);
+          box-shadow: $shadow-dark-1--wide;
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: $shadow-dark-1;
       }
 
 
