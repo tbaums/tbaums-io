@@ -308,6 +308,8 @@ body {
     display: inline-block; }
   .footer__social {
     display: inline-block; }
+    .footer__social a {
+      text-decoration: none; }
   .footer__icon {
     fill: #ef767a;
     height: 2.5rem;

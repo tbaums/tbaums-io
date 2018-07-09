@@ -16,6 +16,9 @@
 
     &__social {
         display: inline-block;
+
+        & a {text-decoration: none;}
+
     }
 
     &__icon{
@@ -24,6 +27,8 @@
         width: 2.5rem;
         margin-right: 3rem;
         transition: all .2s;
+
+        
 
         &:hover {
             transform: translateY(-10%);
