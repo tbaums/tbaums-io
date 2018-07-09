@@ -1,11 +1,12 @@
-@import "base";
-@import "typography";
+@import "base/animations";
+@import "base/typography";
+@import "base/variables";
+@import "base/base";
 
-@import "sidebar";
-@import "header";
-@import "realtors";
-@import "features";
-@import "story";
-@import "homes";
-@import "gallery";
-@import "footer";
+@import "components/feature";
+@import "components/card";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/intro";
+@import "layout/projects";

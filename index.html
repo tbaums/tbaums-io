@@ -1,17 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>nexter &mdash; your home, your freedom</title>
-    </head>
-    <body class="container">
-        
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Tbaums.io</title>
+</head>
+
+<body class="container">
+    <!-- TODO - add checkbox hack menu -->
+    <!-- TODO - add floating full name to top right -->
+    <header class="header">
+        <!-- TODO - add loading animation for header text -->
+        <!-- TODO include an autoplay coding video here beneath the gradient overlay -->
+        <h1 class="header__text">
+            Hi!
+            <br /> I'm Michael Tanenbaum, <br/> a software engineer based in NYC.
+        </h1>
+        <!-- TODO - add an anchor tag to the intro section so that it scrolls when clicked -->
+        <svg class="header__icon">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+        </svg>
+    </header>
+    <div class="intro__left-gutter"></div>
+    <section class="intro">
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-global"></use>
+            </svg>
+            <h4 class="feature__title">
+                Committed to quality code
+            </h4>
+            <p class="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
+                autem quae iste aliquid velit nisi beatae similique vitae.
+            </p>
+        </div>
+
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-presentation"></use>
+            </svg>
+            <h4 class="feature__title">
+                Business-focused engineer
+            </h4>
+            <p class="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
+                autem quae iste aliquid velit nisi beatae similique vitae.
+            </p>
+        </div>
+
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-trophy"></use>
+            </svg>
+            <h4 class="feature__title">
+                Enthusiastic team player
+            </h4>
+            <p class="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
+                autem quae iste aliquid velit nisi beatae similique vitae.
+            </p>
+        </div>
+
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-global"></use>
+            </svg>
+            <h4 class="feature__title">
+                Technique before technology
+            </h4>
+            <p class="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas dignissimos enim, earum recusandae labore veritatis
+                autem quae iste aliquid velit nisi beatae similique vitae.
+            </p>
+        </div>
+    </section>
+    <div class="intro__right-gutter"></div>
+    <div class="projects__left-gutter"></div>
+    <section class="projects">
+        <h2 class="projects__title">
+            Example Projects 
+        </h2>
+        <div class="project">Minesweeper (React)</div>
+        <div class="project">Nature tours landing page (float-based layout)</div>
+        <div class="project">Travel booking webapp (flexbox-based layout)</div>
+    </section>
+    <div class="projects__right-gutter"></div>
+    <footer class="footer">Text goes here</footer>
+</body>
+
 </html>
