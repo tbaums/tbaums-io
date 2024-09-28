@@ -3,8 +3,6 @@
 use dioxus::prelude::*;
 use dioxus_logger::tracing::{info, Level};
 
-
-
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
     #[route("/")]
@@ -39,18 +37,35 @@ fn Home() -> Element {
     let mut count = use_signal(|| 0);
 
     rsx! {
-        Link {
-            to: Route::Blog {
-                id: count()
-            },
-            "Go to blog"
-        }
         div {
-            h1 { 
-                class: "text-4xl font-bold underline text-red-500",
-                "High-Five counter: {count}" }
-            button { onclick: move |_| count += 1, "Up high!" }
-            button { onclick: move |_| count -= 1, "Down low!" }
+            class: "pt-2 md:pt-5 lg:pt-8 bg-lavender",
+            div {
+                id: "container",
+                class: "container mx-auto bg-plum/50 md:rounded-lg md:pb-3 pb-2 md:pr-2 md:pt-4 pt-2",
+                div {
+                    class: "grid grid-cols-1 md:grid-cols-[1fr_auto] gap-2 md:gap-4",
+                    div {
+                        style: "box-shadow: 0px 0px 5px lavender;",
+                        class: "opacity-75 text-4xl border-b-black-violet border-b-0 md:border-b-2 text-black-violet pl-1 pb-2 pt-1 md:ml-3 md:pl-3 md:pb-4 md:pt-2 font-bold bg-lavender",
+                        "Michael Tanenbaum"
+                    }
+                    div {
+                        class: "text-black-violet border-b-black-violet border-b-0 md:border-b-2 bg-lavender opacity-75 text-center grid place-items-center text-4xl",
+                        Link {
+                            to: Route::Home {  },
+                            ">"
+                        }
+                    }   
+                    div {
+                        class: "md:border-l-2 md:border-b-2 md:border-black-violet bg-lavender opacity-75 pl-1 pb-2 pt-1 md:ml-3 md:pl-3 md:pb-4 md:pt-2",
+                        "Down low!"
+                    }
+                    div {
+                        class: "md:border-b-2 md:border-black-violet bg-lavender opacity-75 pl-1 pb-2 pt-1 md:ml-0 md:pl-0 md:pb-4 md:pt-2",
+                        "Go to blog"
+                    }
+                }
+            }
         }
     }
 }
