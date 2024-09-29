@@ -467,6 +467,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2ea539174bb236e0e7dc9c12b19b88eae3cb574dedbd0252a2d43ea7e6de13e2"
 
 [[package]]
+name = "dioxus-free-icons"
+version = "0.8.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bfbba8b2089b185e4cebc394fb36353c7269a3230b542d97d3d192ccd864d48b"
+dependencies = [
+ "dioxus",
+]
+
+[[package]]
 name = "dioxus-fullstack"
 version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2176,6 +2185,7 @@ name = "tbaums-io"
 version = "0.1.0"
 dependencies = [
  "dioxus",
+ "dioxus-free-icons",
  "dioxus-logger",
  "manganis",
 ]
