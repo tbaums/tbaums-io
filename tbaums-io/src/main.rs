@@ -5,7 +5,7 @@ use dioxus_logger::tracing::{info, Level};
 use manganis;
 
 // Urls are relative to your Cargo.toml file
-const _TAILWIND_URL: &str = manganis::mg!(file("./dist/tailwind.css"));
+const _TAILWIND_URL: &str = manganis::mg!(file("dist/tailwind.css"));
 
 
 
