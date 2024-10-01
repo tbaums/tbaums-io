@@ -18,6 +18,8 @@ asset_dir = "assets"
 # HTML title tag content
 title = "tbaums-io"
 
+base_path = "tbaums-io"
+
 [web.watcher]
 
 # when watcher trigger, regenerate the `index.html`
@@ -31,7 +33,7 @@ watch_path = ["src", "assets"]
 
 # CSS style file
 
-style = ["/tailwind.css"]
+style = ["dist/tailwind.css"]
 
 # Javascript code file
 script = []
