@@ -18,6 +18,8 @@ asset_dir = "assets"
 # HTML title tag content
 title = "tbaums-io"
 
+base_path = "tbaums-io"
+
 [web.watcher]
 
 # when watcher trigger, regenerate the `index.html`
