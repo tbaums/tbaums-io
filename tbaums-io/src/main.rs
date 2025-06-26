@@ -222,20 +222,20 @@ fn Home() -> Element {
                     div {
                         class: "my-2",
                         p {
-                            "- Designed, developed, and programmed data gathering, storage, and statistical analysis software for HR executives to assist in data-­driven decision-­making."
+                            "- Designed, developed, and programmed data gathering, storage, and statistical analysis software for HR executives to assist in data-driven decision-making."
                             }
                         }
                     }
                     div {
                         class: "my-2",
                         p {
-                        "- Created and executed 8-­stage sales process, communicating via email with 2000+ companies per week, yielding 32% aggregate response rate and 30+ sales meetings with prospective clients per week."
+                        "- Created and executed 8-stage sales process, communicating via email with 2000+ companies per week, yielding 32% aggregate response rate and 30+ sales meetings with prospective clients per week."
                         }
                     }
                     div {
                         class: "my-2",
                         p {
-                        "- Successfully closed 130 VP-­level clients with annual contract value ranging up to $45,000."
+                        "- Successfully closed 130 VP-level clients with annual contract value ranging up to $45,000."
                         }
                     }
 
